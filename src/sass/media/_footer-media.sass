@@ -1,0 +1,34 @@
+@media screen and ( max-width: 950px)
+    .footer
+        .footer-wrapper
+            display: grid
+            grid-template-columns: 346px auto 457px
+            grid-template-rows: 350px  200px
+
+@media screen and ( max-width: 810px)
+    .footer
+        .footer-wrapper
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: 350px  200px
+            &__info
+                display: none
+            &__categories
+                width: 100vw
+                padding-left: 0
+
+
+@media screen and ( max-width: 560px)
+    .footer
+        .footer-wrapper
+            &__categories 
+                .categories ul
+                    width: 100px
+                .brands-list
+                    display: none
+            &__contacts
+                .mail
+                    display: none
+                
+                
+                

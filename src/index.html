@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P-MARKET</title>
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header" >
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="#">
+            <img src="img/main/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="new.html" class="nav-list__link">new</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="sale.html" class="nav-list__link">sale</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">shoes</a>
+              <ul class="dropdown-content dropdown-content__shoes">
+                <li class="dropdown-content__link">
+                  <a href="#">Спортивная обувь</a>
+                </li>
+                <li class="dropdown-content__link">
+                  <a href="#">Зимняя обувь</a>
+                </li>
+                <li class="dropdown-content__link">
+                  <a href="#">Лимитированные модели</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link clothes">clothes</a>
+              <ul class="dropdown-content">
+                <li class="dropdown-content__link">
+                  <a href="#">Футболки</a>
+                </li>
+                <li class="dropdown-content__link"><a href="#">Куртки</a></li>
+                <li class="dropdown-content__link"><a href="#">Худи</a></li>
+                <li class="dropdown-content__link">
+                  <a href="#">Лонгсливы</a>
+                </li>
+                <li class="dropdown-content__link"><a href="#">Шорты</a></li>
+                <li class="dropdown-content__link"><a href="#">Джинсы</a></li>
+                <li class="dropdown-content__link"><a href="#">Белье</a></li>
+              </ul>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">accessories</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">brands</a>
+              <ul class="dropdown-content">
+                <li class="dropdown-content__link"><a href="#">Nike</a></li>
+                <li class="dropdown-content__link"><a href="#">Bape</a></li>
+                <li class="dropdown-content__link">
+                  <a href="#">Maisom Margiela</a>
+                </li>
+                <li class="dropdown-content__link">
+                  <a href="#">New Balance</a>
+                </li>
+                <li class="dropdown-content__link"><a href="#">Adidas</a></li>
+                <li class="dropdown-content__link">
+                  <a href="#">Supreme</a>
+                </li>
+                <li class="dropdown-content__link"><a href="#">Stussy</a></li>
+                <li class="dropdown-content__link">
+                  <a href="#">Polar Skate CO</a>
+                </li>
+                <li class="dropdown-content__link">
+                  <a href="#">Cav Empt</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="function">
+          <div class="func-wrapper">
+            <div class="search func-item">
+              <img src="img/main/func/search.png" alt="search" />
+            </div>
+            <div class="like func-item">
+              <img src="img/main/func/like.png" alt="like" />
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-modal ">
+      <div class="search-modal__wrapper">
+        <div class="search-modal__form">
+          <input type="text" class="search-modal__input" placeholder="Search">
+          <img src="img/main/func/grey-search.png" alt="search" class="search-modal__button">
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+
+
+    
+
+    <section class="slogan">
+        <div class="slogan-wrapper">
+          <div class="slogan-wrapper__item plaza-shop">P-MARKET</div>
+          <div class="slogan-wrapper__item individual-order">
+            individual order
+          </div>
+          <div class="slogan-wrapper__item style">STYLE</div>
+          <div class="slogan-wrapper__item only">ONLY ORIGINAL</div>
+
+          <div class="slogan-wrapper__item shopping">SHOPPING</div>
+          <div class="slogan-wrapper__item expensive">EXPENSIVE</div>
+          <div class="slogan-wrapper__item go-shopping">go shopping</div>
+          <div class="slogan-wrapper__item fashion">FASHION</div>
+        </div>
+    </section>
+
+    <section class="main-cards">
+        <div class="cards-wrapper">
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/t-short.png" alt="t-short" />
+            </div>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">t-shirt maison margiela</div>
+              <div class="item__price">29.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/shorts.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">short polar big boy</div>
+              <div class="item__price">5.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/cap.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">cap gap</div>
+              <div class="item__price">3.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/new_balance.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">sneakers new balance</div>
+              <div class="item__price">11.999₽</div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+   <section class="section-banner">
+        <div class="banner-wrapper">
+          <a href="#" class="banner-wrapper__link">
+            <img src="img/main/banner.png" alt="banner" />
+          </a>
+          <a href="#" class="banner-wrapper__link-media">
+            <img src="img/main/banner-media.png" alt="banner" />
+          </a>
+        </div>
+    </section> 
+
+    <section class="cards">
+      <div class="cards-inner">
+        <div class="cards-info">
+          <h2 class="cards-info__subtitle">Sneakers</h2>
+          <a href="" class="cards-info__link"
+            >view all <span><img src="img/main/Vector.png" alt="" /></span
+          ></a>
+        </div>
+        <div class="cards-wrapper">
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img
+                src="img/main/cards/sneakers/travis_scott1.png"
+                alt="t-short"
+              />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">Travis Scott & Nike Air Jordan 1 Low</div>
+              <div class="item__price">59.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/sneakers/retro.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">nike Dunk Low Retro</div>
+              <div class="item__price">14.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/sneakers/off-white.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">nike Dunk Low Off-White</div>
+              <div class="item__price">79.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/new_balance.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">sneakers new balance</div>
+              <div class="item__price">11.999₽</div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+ 
+    <section class="cards">
+      <div class="cards-inner">
+        <div class="cards-info">
+          <h2 class="cards-info__subtitle">Clothes</h2>
+          <a href="" class="cards-info__link"
+            >view all <span><img src="img/main/Vector.png" alt="" /></span
+          ></a>
+        </div>
+        <div class="cards-wrapper">
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/clothes/t-shirt.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">t-shirt maison margiela</div>
+              <div class="item__price">29.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img
+                src="img/main/cards//clothes/t-shirt_supreme.png"
+                alt="t-short"
+              />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">t-shirt supreme</div>
+              <div class="item__price">12.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/clothes/supremexTNF.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">supreme x The North Face</div>
+              <div class="item__price">16.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img src="img/main/cards/clothes/hoodles_gap.png" alt="t-short" />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">hoodies gap</div>
+              <div class="item__price">8.999₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards-inner">
+        <div class="cards-info">
+          <h2 class="cards-info__subtitle">Limited collection</h2>
+          <a href="" class="cards-info__link lim-col"
+            >view all <span><img src="img/main/Vector.png" alt="" /></span
+          ></a>
+        </div>
+
+        <div class="cards-wrapper">
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img
+                src="img/main/cards/limited collection/kaws_37sm.png"
+                alt="t-short"
+              />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">kaws 37sm</div>
+              <div class="item__price">37.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img
+                src="img/main/cards/limited collection/kaws_bff_blue.png"
+                alt="t-short"
+              />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">kaws bff blue</div>
+              <div class="item__price">39.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img
+                src="img/main/cards/limited collection/bearbrick.png"
+                alt="t-short"
+              />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">Bearbrick x BAPE</div>
+              <div class="item__price">38.999₽</div>
+            </div>
+          </div>
+
+          <div class="cards-wrapper__item">
+            <div class="cards-wrapper__img">
+              <img
+                src="img/main/cards/limited collection/supreme_zippo.png"
+                alt="t-short"
+              />
+            </div>
+            <div class="cards-wrapper__info">
+              <div class="item__name">supreme zippo red</div>
+              <div class="item__price">11.999₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper__info grid">
+            <div class="logo">
+              <a href="#">
+                <img src="img/main/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a href="#" class="item-link">Главная</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#" class="item-link">Новое</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#" class="item-link">Распродажа</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#" class="item-link">Коллекции</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-wrapper__categories grid">
+            <div class="categories">
+              <ul class="categories-list">
+                <li class="categories-list__item">
+                  <a href="#" class="item-link">Одежда</a>
+                </li>
+                <li class="categories-list__item">
+                  <a href="#" class="item-link">Обувь</a>
+                </li>
+                <li class="categories-list__item">
+                  <a href="#" class="item-link">Аксессуары</a>
+                </li>
+                <li class="categories-list__item">
+                  <a href="#" class="item-link">коллекции</a>
+                </li>
+                <li class="categories-list__item">
+                  <a href="#" class="item-link">Заказать с poizon</a>
+                </li>
+              </ul>
+
+              <ul class="brands-list">
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">Nike</a>
+                </li>
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">New Balance</a>
+                </li>
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">Supreme</a>
+                </li>
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">Adidas</a>
+                </li>
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">Stussy</a>
+                </li>
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">Balenciaga</a>
+                </li>
+                <li class="brands-list__item">
+                  <a href="#" class="item-link">Other brands</a>
+                </li>
+              </ul>
+
+              <ul class="other-list">
+                <li class="other-list__item">
+                  <a href="https://t.me/plazaashop" class="item-link">Блог</a>
+                </li>
+                <li class="other-list__item">
+                  <a href="https://t.me/plmaneg" class="item-link"
+                    >Оставить заявку</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-wrapper__contacts grid">
+            <div class="media">
+              <ul class="media-list">
+                <li class="media-list__item">
+                  <a href="https://t.me/plazaashop" class="item-link"
+                    >Телеграм</a
+                  >
+                </li>
+                <li class="media-list__item">
+                  <a href="#" class="item-link">Инстаграм</a>
+                </li>
+              </ul>
+
+              <ul class="mail">
+                <li class="mail-list__item">
+                  <a href="https://t.me/plazaashop" class="item-link"
+                    >Эл. Почта</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="help__list">
+                <li class="help-list__item">
+                  <a href="https://t.me/plmaneg" class="item-link">Поддержка</a>
+                </li>
+                <li class="help-list__item">
+                  <a href="https://t.me/plmaneg" class="item-link"
+                    >Оставить отзыв</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <script src="js/script.js"></script>
+  </body>
+</html>

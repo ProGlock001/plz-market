@@ -1,0 +1,92 @@
+.footer
+
+    margin-top: 100px
+    background-color: $main-color
+    min-height: 520px
+    border-top: 2px solid black
+    
+.footer-wrapper
+    max-width: 1700px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 346px auto 457px
+    grid-template-rows: 320px  200px
+    &__info
+        grid-column: 1 / 2
+        grid-row: 1 / span 2
+        border-right: 2px solid black
+        
+        .menu-list
+            margin-top: 90px
+            &__item
+                font-size: 26px
+                font-weight: 600
+                line-height: 29px
+                margin-bottom: 15px
+    &__categories
+        grid-column: 2 / span 2
+        grid-row: 1 
+        border-bottom: 2px solid black
+        border-right: 2px solid black
+
+        .categories
+            display: flex
+            justify-content: space-around
+            
+            .categories-list
+                &__item 
+                    margin-bottom: 10px
+                    .item-link
+                        color: #111
+                        font-size: 22px
+                        font-weight: 600
+            .brands-list
+                &__item 
+                    margin-bottom: 10px
+                    .item-link
+                        color: #111
+                        font-size: 22px
+                        font-weight: 600
+            .other-list
+                &__item 
+                    margin-bottom: 10px
+                    .item-link
+                        color: #111
+                        font-size: 22px
+                        font-weight: 600
+
+    &__contacts
+        grid-column: 2 / span 2
+        grid-row: 2 
+        border-right: 2px solid black
+        .media
+            display: flex
+            justify-content: space-around
+            .media-list
+                    &__item 
+                        margin-bottom: 10px
+                        .item-link
+                            color: #111
+                            font-size: 22px
+                            font-weight: 600
+            .mail-list
+                    &__item 
+                        margin-bottom: 10px
+                        .item-link
+                            color: #111
+                            font-size: 22px
+                            font-weight: 600
+            .help-list
+                    &__item 
+                        margin-bottom: 10px
+                        .item-link
+                            color: #111
+                            font-size: 22px
+                            font-weight: 600
+.grid
+    padding-top: 50px
+    padding-bottom: 50px
+
+
+    
+    

@@ -1,0 +1,135 @@
+.header
+    width: 100%
+    position: fixed
+    z-index: 4
+    background-color: #fff
+    top:0
+    
+.header-wrapper
+    width: 1700px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 120px
+
+    
+
+
+
+.nav-list
+    display: flex
+    flex-direction: row
+    
+    &__item
+        position: relative
+        float: left
+        &:hover > .dropdown-content
+            display: initial
+            text-align: center
+    &__link
+        font-size: 25px
+        padding: 50px
+        &:hover
+            text-decoration: underline #a09b9b
+         
+            
+  
+
+.dropdown-content 
+    display: none
+    position: absolute
+    left: 0
+    min-width: 100%
+    max-height: auto
+    background-color: #F8F8F8
+    padding: 20px
+    border-radius: 10px
+    z-index: 2
+    word-break: normal
+    
+    &__shoes
+        width: 260px
+    a
+        font-size: 20px
+        padding: 8px
+        &:hover
+            text-decoration: underline #a09b9b   
+    .dropdown-content__link
+        width: 100%
+
+.func-wrapper
+    display: flex
+    flex-direction: row
+    gap: 40px
+
+.func-item
+    img
+        width: 27px
+        height: 27px
+
+
+////////////////////////////////////////////////////
+.menu-button-container 
+    display: none
+    height: 100%
+    width: 30px
+    cursor: pointer
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+#menu-toggle 
+    display: none
+
+
+.menu-button
+  display: block
+  background-color: #111
+  position: absolute
+  height: 2px
+  width: 30px
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1)
+  border-radius: 2px
+  &::before, &::after
+    display: block
+    background-color: #111
+    position: absolute
+    height: 2px
+    width: 30px
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1)
+    border-radius: 2px
+
+
+
+.menu-button
+    &::before 
+        content: ''
+        margin-top: -8px
+
+
+.menu-button
+    &::after 
+        content: ''
+        margin-top: 8px
+
+
+#menu-toggle:checked + .menu-button-container .menu-button::before 
+    margin-top: 0px
+    transform: rotate(405deg)
+
+
+#menu-toggle:checked + .menu-button-container .menu-button 
+    background: rgba(255, 255, 255, 0)
+
+
+#menu-toggle:checked + .menu-button-container .menu-button::after 
+    margin-top: 0px
+    transform: rotate(-405deg)
+
+
+.hidden
+    display: flex !important
+
+

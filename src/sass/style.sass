@@ -1,0 +1,49 @@
+@import "base/variables"
+@import "base/animations"
+@import "base/mixins"
+
+
+
+*
+	box-sizing: border-box
+	font-family: "Trap", sans-serif
+	font-weight: 700
+	color: #000
+	list-style: none
+	margin: 0
+	padding: 0
+	text-decoration: none
+	
+
+a
+	color: #000
+	display: block
+
+.container
+	width: 1700px
+	margin: 0 auto
+
+@media screen and ( max-width: 1700px  )
+	.container
+		width: 1400px
+
+	
+@import "blocks/header"
+@import "media/header-media"
+
+@import "blocks/slogan"
+@import "media/slogan-media"
+
+@import "blocks/mainCards"
+@import "media/mainCards-media"
+
+@import "blocks/banner"
+@import "media/banner-media"
+
+@import "blocks/sneakers"
+@import "media/sneakers-media"
+
+@import "blocks/footer"
+@import "media/footer-media"
+
+@import "blocks/searchModal"
